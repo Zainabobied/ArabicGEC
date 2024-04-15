@@ -1,4 +1,4 @@
-# Bidirectional training approach with CapsNet for Advancing Automatic Arabic Grammar Correction
+# Automatic Arabic Grammar Correction
 # Model requirements
 Regarding load and running the trained models requires a working installation of the following:
 - Python 3.6.10 or latest 
