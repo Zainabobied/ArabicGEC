@@ -39,6 +39,7 @@ Low-resource Arabic Grammatical Error Correction (GEC) system built on a modifie
 - sentencepiece
 
 ### Project Structure
+
 ArabicGEC/
 │
 ├─ configs/
