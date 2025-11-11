@@ -4,15 +4,15 @@ Low-resource Arabic Grammatical Error Correction (GEC) system built on a modifie
 
 > This repository targets QALB-2014/2015 evaluation with the official M² (MaxMatch) scorer.
 
-## Requirements
+### Requirements
 
 - Python 3.8+
 - CUDA-enabled PyTorch (optional but recommended)
-torch==1.13.1
-torchtext==0.14.1
-numpy
-pandas
-PyArabic
-tqdm
-pyyaml
-sentencepiece
+- torch==1.13.1
+- torchtext==0.14.1
+- numpy
+- pandas
+- PyArabic
+- tqdm
+- pyyaml
+- sentencepiece
