@@ -1,11 +1,5 @@
-# Automatic Arabic Grammar Correction
-# Model requirements
-Regarding load and running the trained models requires a working installation of the following:
-- Python 3.6.10 or latest 
-- pytorch==1.6.0
-- torchtext==0.6.0
-- numpy==1.17.0
-- pandas==1.17.0
-- PyArabic==0.6.10
-- bpemb==0.3.2
-- nltk==3.3
+# Arabic GEC — GASD + CapsNet + Bidirectional Agreement
+
+Low-resource Arabic Grammatical Error Correction (GEC) system built on a Transformer backbone with:GASD noise method (two baselines: SDA word swapping, SEG spelling & normalization) to construct large synthetic parallel data, CapsNet (EM routing) for dynamic layer aggregation across encoder/decoder layers, Bidirectional agreement (R2L & L2R) with KL-divergence regularization to mitigate exposure bias, and Multi-pass correction and L2R re-ranking of R2L n-best candidates.
+
+> This repository targets QALB-2014/2015 evaluation with the official M² (MaxMatch) scorer.
