@@ -4,6 +4,27 @@ Low-resource Arabic Grammatical Error Correction (GEC) system built on a modifie
 
 > This repository targets QALB-2014/2015 evaluation with the official M² (MaxMatch) scorer.
 
+---
+
+## Table of Contents
+- [Overview](#overview)
+- [Project Structure](#project-structure)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Data Preparation](#data-preparation)
+- [Usage](#usage)
+  - [1) GASD Synthetic Data Generation](#1-gasd-synthetic-data-generation)
+  - [2) Training](#2-training)
+  - [3) Decoding & Multi-pass Correction](#3-decoding--multi-pass-correction)
+  - [4) Re-ranking](#4-re-ranking)
+  - [5) Evaluation on QALB](#5-evaluation-on-qalb)
+- [Configs](#configs)
+- [Notes](#notes)
+- [Citation](#citation)
+- [License](#license)
+
+---
+
 ### Requirements
 
 - Python 3.8+
