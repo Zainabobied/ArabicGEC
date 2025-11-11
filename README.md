@@ -37,3 +37,37 @@ Low-resource Arabic Grammatical Error Correction (GEC) system built on a modifie
 - tqdm
 - pyyaml
 - sentencepiece
+
+### Project Structure
+ArabicGEC/
+│
+├─ configs/
+│ ├─ gasd.yml # GASD (SDA/SEG) settings
+│ ├─ train.yml # model & training hyperparameters
+│ └─ infer.yml # decoding, beam size, rerank flags
+│
+├─ data/
+│ ├─ siiurce_text.txt # clean Arabic monolingual corpus (input to GASD)
+│ ├─ vocab.txt # vocabulary for semantic/noise ops (optional)
+│ ├─ train.csv # GASD output: parallel dataset (src,trg)
+│ └─ qalb/
+│ ├─ test.src # test source (noisy)
+│ ├─ test.ref # test references (plain text; optional)
+│ └─ test.gold.m2 # QALB-2014/2015 official M² annotations
+│
+├─ scripts/
+│ ├─ gasd_generate.py # build synthetic parallel (CSV: src,trg)
+│ ├─ train_caps_bid.py # train L2R + R2L with KL regularization
+│ ├─ decode.py # decode with R2L (or L2R), write hypotheses
+│ ├─ multipass.py # chain R2L→L2R or L2R→R2L
+│ ├─ rerank.py # rerank R2L n-best with L2R
+│ └─ make_vocab.py # build vocab.txt from mono.txt (optional)
+│
+├─ m2Scripts/
+│ └─ m2scorer.py # official MaxMatch scorer (place here)
+│
+├─ checkpoints/ # saved models (L2R, R2L, joint)
+├─ system_outputs/ # predictions, n-best, reranked results
+├─ images-and-diagrams/ # optional figures for the README/paper
+├─ requirements.txt
+└─ README.md
