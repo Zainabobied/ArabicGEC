@@ -72,3 +72,19 @@ ArabicGEC/
 ├─ images-and-diagrams/ # optional figures for the README/paper
 ├─ requirements.txt
 └─ README.md
+
+
+
+> Install exact CUDA/PyTorch versions matching your system.
+
+---
+
+## Installation
+
+```bash
+python -m venv .venv
+source .venv/bin/activate    # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+
+
+
