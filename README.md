@@ -15,26 +15,6 @@ ArabicGEC is an Arabic Grammatical Error Correction (GEC) framework that extends
   <br>
   <i>Illustration of the Model Architecture Integrating GASD. (a)Highlights the Bidirectional GEC-R2L and GEC-L2R Models Over Two Iterations Governed by a Regularization Term. (b) Provides a Detailed View of the Encoder and Decoder Architecture with CapsNet</i>
 </p>
----
-
-## Table of Contents
-- [Overview](#overview)
-- [Project Structure](#project-structure)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Data Preparation](#data-preparation)
-- [Usage](#usage)
-  - [1) GASD Synthetic Data Generation](#1-gasd-synthetic-data-generation)
-  - [2) Training](#2-training)
-  - [3) Decoding & Multi-pass Correction](#3-decoding--multi-pass-correction)
-  - [4) Re-ranking](#4-re-ranking)
-  - [5) Evaluation on QALB](#5-evaluation-on-qalb)
-- [Configs](#configs)
-- [Notes](#notes)
-- [Citation](#citation)
-- [License](#license)
-
----
 
 ### Requirements
 
@@ -49,6 +29,18 @@ ArabicGEC is an Arabic Grammatical Error Correction (GEC) framework that extends
 - pyyaml
 - sentencepiece
 
+## Installation
+
+1. Create a virtual environment:
+```bash
+python -m venv venv
+source venv/bin/activate
+```
+
+2. Install requirements:
+```bash
+pip install -r requirements.txt
+```
 ### Project Structure
 
 ArabicGEC/
