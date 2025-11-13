@@ -54,7 +54,7 @@ ArabicGEC/
 │
 ├─ data/
 │ ├─ source_text.txt # clean Arabic monolingual corpus
-│ ├─ vocab.txt # vocabulary for semantic/noise ops
+│ ├─ vocab.txt # vocabulary for snoise ops
 │ └─ train.csv # Dataset (src, trg)
 │
 ├─ scripts/
@@ -89,7 +89,7 @@ python scripts/edse_generate.py --input data/input.txt --output data/
 
 2. Training:
 ```bash
-python scripts/train_bkdgec.py \
+python scripts/train.py \
   --input data/train.csv \
   --config configs/configs.yml
 ```
