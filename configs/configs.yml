@@ -1,5 +1,5 @@
 # =======================================================
-# Unified Config File for ArabicGEC (GASD + BiCaps + R2L-L2R)
+# Config File for ArabicGEC (GASD + BiCaps + R2L-L2R)
 # =======================================================
 
 general:
@@ -9,11 +9,11 @@ general:
   outputs_dir: "system_outputs/"
 
 data:
-  raw_mono: "data/raw/input.txt"
+  raw_mono: "data/source_text.txt"
   vocab: "data/vocab.txt"
   train_csv: "data/train.csv"
-  qalb_test_src: "data/qalb/test.src"
-  qalb_test_gold: "data/qalb/test.gold.m2"
+  qalb_test_src: ""system_outputs/predect.txt"
+  qalb_test_gold: "m2Scripts/2014_gold.m2"
 
 gasd:
   alpha: 0.10
@@ -46,4 +46,4 @@ decoding:
 evaluation:
   scorer_script: "m2Scripts/m2scorer.py"
   system_output: "system_outputs/pred.txt"
-  gold_file: "data/qalb/test.gold.m2"
+  gold_file: "m2Scripts/2014_gold.m2"
