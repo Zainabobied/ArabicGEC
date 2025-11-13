@@ -30,7 +30,8 @@ ArabicGEC is an Arabic Grammatical Error Correction (GEC) framework that extends
 - sentencepiece
 
 ```
-
+> Install exact CUDA/PyTorch versions matching your system.
+> 
 ### Installation
 
 1. Create a virtual environment:
@@ -76,8 +77,6 @@ ArabicGEC/
 └─ README.md
 ```
 
-
-> Install exact CUDA/PyTorch versions matching your system.
 
 ---
 
