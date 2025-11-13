@@ -107,10 +107,8 @@ If you use this code in your research, please cite our paper:
 
 ```bibtex
 @article{Mahmoud2024BidirectionalGEC,
-  author       = {Zeinab Mahmoud and Natalia Kryvinska and Mohammed Abdalsalm 
-                  and Aiman Solyman and Ali Alfatemi and Ahmad Musyafa},
-  title        = {Toward Utilizing Bidirectional Multi-head Attention Technique 
-                  for Automatic Correction of Grammatical Errors},
+  author       = {Zeinab Mahmoud and Natalia Kryvinska and Mohammed Abdalsalm and Aiman Solyman and Ali Alfatemi and Ahmad Musyafa},
+  title        = {Toward Utilizing Bidirectional Multi-head Attention Technique for Automatic Correction of Grammatical Errors},
   journal      = {IAENG International Journal of Computer Science},
   volume       = {51},
   number       = {11},
