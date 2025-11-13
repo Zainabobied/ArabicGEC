@@ -99,7 +99,7 @@ python scripts/generate_edse.py \
 ```bash
 python m2Scripts/m2scorer.py \
   system_outputs/pred.txt \
-  m2Scripts/QALB-2014_test.gold.m2
+  m2Scripts/QALB_test2014.m2
 ```
 
 ## Citation
