@@ -49,18 +49,12 @@ pip install -r requirements.txt
 ArabicGEC/
 │
 ├─ configs/
-│ ├─ gasd.yml # GASD (SDA/SEG) settings
-│ ├─ train.yml # model & training hyperparameters
-│ └─ infer.yml # decoding, beam size, rerank flags
+│ └─ config.yml # framework settings
 │
 ├─ data/
-│ ├─ siiurce_text.txt # clean Arabic monolingual corpus (input to GASD)
-│ ├─ vocab.txt # vocabulary for semantic/noise ops (optional)
-│ ├─ train.csv # GASD output: parallel dataset (src,trg)
-│ └─ qalb/
-│ ├─ test.src # test source (noisy)
-│ ├─ test.ref # test references (plain text; optional)
-│ └─ test.gold.m2 # QALB-2014/2015 official M² annotations
+│ ├─ siiurce_text.txt # clean Arabic monolingual corpus
+│ ├─ vocab.txt # vocabulary for semantic/noise ops
+│ ├─ train.csv # Dataset (src, trg)
 │
 ├─ scripts/
 │ ├─ gasd_generate.py # build synthetic parallel (CSV: src,trg)
@@ -71,10 +65,12 @@ ArabicGEC/
 │ └─ make_vocab.py # build vocab.txt from mono.txt (optional)
 │
 ├─ m2Scripts/
-│ └─ m2scorer.py # official MaxMatch scorer (place here)
+│ ├─ 2015_gold.m2 # QALB-2015 official M² annotations
+│ └─ 2014_gold.m2 # QALB-2014 official M² annotations
 │
 ├─ checkpoints/ # saved models (L2R, R2L, joint)
-├─ system_outputs/ # predictions, n-best, reranked results
+├─ system_outputs/ 
+│ └─ pred.txt # predictions, model outputs
 ├─ images-and-diagrams/ # optional figures for the README/paper
 ├─ requirements.txt
 └─ README.md
