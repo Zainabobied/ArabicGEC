@@ -80,12 +80,45 @@ ArabicGEC/
 
 ---
 
-## Installation
+## Usage
 
+1. Data Generation (EDSE):
 ```bash
-python -m venv .venv
-source .venv/bin/activate    # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
+python scripts/edse_generate.py --input data/input.txt --output data/
+```
+
+2. Training:
+```bash
+python scripts/generate_edse.py \
+  --input data/mono.txt \
+  --output data/train.csv \
+  --config configs/edse.yml
+```
+
+3. Evaluation:
+```bash
+python m2Scripts/m2scorer.py \
+  system_outputs/pred.txt \
+  data/QALB-2014/test.gold.m2
+```
+
+## Citation
+If you use this code in your research, please cite our paper:
+
+```bibtex
+@article{Mahmoud2024BidirectionalGEC,
+  author       = {Zeinab Mahmoud and Natalia Kryvinska and Mohammed Abdalsalm 
+                  and Aiman Solyman and Ali Alfatemi and Ahmad Musyafa},
+  title        = {Toward Utilizing Bidirectional Multi-head Attention Technique 
+                  for Automatic Correction of Grammatical Errors},
+  journal      = {IAENG International Journal of Computer Science},
+  volume       = {51},
+  number       = {11},
+  pages        = {1886--1897},
+  year         = {2024}
+}
+
+```
 
 
 
