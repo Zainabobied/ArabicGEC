@@ -4,15 +4,14 @@
 
 general:
   seed: 42
-  device: "cuda"          # or "cpu"
+  device: "cuda"                 # "cuda" or "cpu"
   save_dir: "checkpoints/"
   outputs_dir: "system_outputs/"
 
 data:
-  raw_mono: "data/source_text.txt"
-  vocab: "data/vocab.txt"
-  train_csv: "data/train.csv"
-  qalb_test_src: ""system_outputs/predect.txt"
+  raw_mono: "data/source_text.txt"     # clean Arabic monolingual corpus
+  vocab: "data/vocab.txt"              # vocabulary (one token per line)
+  train_csv: "data/train.csv"          # GASD output (src,trg)
   qalb_test_gold: "m2Scripts/2014_gold.m2"
 
 gasd:
@@ -24,13 +23,16 @@ gasd:
 
 training:
   model_type: "transformer_capsnet"
-  embedding_dim: 512
-  hidden_dim: 512
-  num_layers: 6
+  embedding_dim: 256
+  hidden_dim: 256
+  num_layers: 4
+  num_heads: 8
   dropout: 0.1
   lr: 2e-4
   batch_size: 32
   num_epochs: 20
+  max_seq_len: 128
+
   use_bidirectional: true
   kl_regularization_weight: 0.8
   save_every: 1
