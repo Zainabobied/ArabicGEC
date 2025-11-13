@@ -29,7 +29,9 @@ ArabicGEC is an Arabic Grammatical Error Correction (GEC) framework that extends
 - pyyaml
 - sentencepiece
 
-## Installation
+```
+
+### Installation
 
 1. Create a virtual environment:
 ```bash
