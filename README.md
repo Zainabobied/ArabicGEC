@@ -17,7 +17,7 @@ ArabicGEC is an Arabic Grammatical Error Correction (GEC) framework that extends
 </p>
 
 ### Requirements
-
+```
 - Python 3.8+
 - CUDA-enabled PyTorch (optional but recommended)
 - torch==1.13.1
