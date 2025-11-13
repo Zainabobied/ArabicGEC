@@ -59,11 +59,7 @@ ArabicGEC/
 │
 ├─ scripts/
 │ ├─ gasd_generate.py # build synthetic parallel (CSV: src,trg)
-│ ├─ train_caps_bid.py # train L2R + R2L with KL regularization
-│ ├─ decode.py # decode with R2L (or L2R), write hypotheses
-│ ├─ multipass.py # chain R2L→L2R or L2R→R2L
-│ ├─ rerank.py # rerank R2L n-best with L2R
-│ └─ make_vocab.py # build vocab.txt from mono.txt (optional)
+│ └─ train.py # train L2R + R2L with KL regularization
 │
 ├─ m2Scripts/
 │ ├─ 2015_gold.m2 # QALB-2015 official M² annotations
