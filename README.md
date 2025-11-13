@@ -45,7 +45,7 @@ pip install -r requirements.txt
 ```
 
 ### Project Structure
-
+```
 ArabicGEC/
 │
 ├─ configs/
@@ -78,7 +78,7 @@ ArabicGEC/
 ├─ images-and-diagrams/ # optional figures for the README/paper
 ├─ requirements.txt
 └─ README.md
-
+```
 
 
 > Install exact CUDA/PyTorch versions matching your system.
