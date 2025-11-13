@@ -3,6 +3,12 @@ ArabicGEC is an Arabic Grammatical Error Correction (GEC) framework that extends
 
 > This repository targets QALB-2014/2015 evaluation with the official M² (MaxMatch) scorer.
 
+
+<p align="center">
+  <img src="/images%20and%20diagrams/fig1.png" alt="EDSE Architecture" width="70%">
+  <br>
+  <i>AArchitecture Overview of the Proposed Noise Method. The Red Box Indicates SDA and the Yellow Represents SEG</i>
+</p>
 ---
 
 ## Table of Contents
