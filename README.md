@@ -54,7 +54,7 @@ ArabicGEC/
 ├─ data/
 │ ├─ siiurce_text.txt # clean Arabic monolingual corpus
 │ ├─ vocab.txt # vocabulary for semantic/noise ops
-│ ├─ train.csv # Dataset (src, trg)
+│ └─ train.csv # Dataset (src, trg)
 │
 ├─ scripts/
 │ ├─ gasd_generate.py # build synthetic parallel (CSV: src,trg)
