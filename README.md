@@ -80,7 +80,7 @@ ArabicGEC/
 
 1. Data Generation (EDSE):
 ```bash
-python scripts/edse_generate.py --input data/input.txt --output data/
+python scripts/edse_generate.py --input data/source_text.txt --output data/
 ```
 
 2. Training:
