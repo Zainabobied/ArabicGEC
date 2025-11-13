@@ -53,7 +53,7 @@ ArabicGEC/
 │ └─ config.yml # framework settings
 │
 ├─ data/
-│ ├─ siiurce_text.txt # clean Arabic monolingual corpus
+│ ├─ source_text.txt # clean Arabic monolingual corpus
 │ ├─ vocab.txt # vocabulary for semantic/noise ops
 │ └─ train.csv # Dataset (src, trg)
 │
