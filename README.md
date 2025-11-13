@@ -5,9 +5,15 @@ ArabicGEC is an Arabic Grammatical Error Correction (GEC) framework that extends
 
 
 <p align="center">
-  <img src="/images%20and%20diagrams/fig1.png" alt="EDSE Architecture" width="70%">
+  <img src="/images%20and%20diagrams/fig1.png" alt="GASD Architecture" width="70%">
   <br>
-  <i>AArchitecture Overview of the Proposed Noise Method. The Red Box Indicates SDA and the Yellow Represents SEG</i>
+  <i>Architecture Overview of the Proposed Noise Method. The Red Box Indicates SDA and the Yellow Represents SEG</i>
+</p>
+
+<p align="center">
+  <img src="/images%20and%20diagrams/ArabicGEC.jpg" alt="ArabicGEC Architecture" width="70%">
+  <br>
+  <i>Illustration of the Model Architecture Integrating GASD. (a)Highlights the Bidirectional GEC-R2L and GEC-L2R Models Over Two Iterations Governed by a Regularization Term. (b) Provides a Detailed View of the Encoder and Decoder Architecture with CapsNet</i>
 </p>
 ---
 
