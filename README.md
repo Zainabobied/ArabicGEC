@@ -89,10 +89,9 @@ python scripts/edse_generate.py --input data/input.txt --output data/
 
 2. Training:
 ```bash
-python scripts/generate_edse.py \
-  --input data/mono.txt \
-  --output data/train.csv \
-  --config configs/edse.yml
+python scripts/train_bkdgec.py \
+  --input data/train.csv \
+  --config configs/configs.yml
 ```
 
 3. Evaluation:
