@@ -1,0 +1,49 @@
+# =======================================================
+# Unified Config File for ArabicGEC (GASD + BiCaps + R2L-L2R)
+# =======================================================
+
+general:
+  seed: 42
+  device: "cuda"          # or "cpu"
+  save_dir: "checkpoints/"
+  outputs_dir: "system_outputs/"
+
+data:
+  raw_mono: "data/raw/input.txt"
+  vocab: "data/vocab.txt"
+  train_csv: "data/train.csv"
+  qalb_test_src: "data/qalb/test.src"
+  qalb_test_gold: "data/qalb/test.gold.m2"
+
+gasd:
+  alpha: 0.10
+  sda_swap_prob: 0.2
+  seg_char_error_prob: 0.15
+  min_len_char_ops: 2
+  output_path: "data/train.csv"
+
+training:
+  model_type: "transformer_capsnet"
+  embedding_dim: 512
+  hidden_dim: 512
+  num_layers: 6
+  dropout: 0.1
+  lr: 2e-4
+  batch_size: 32
+  num_epochs: 20
+  use_bidirectional: true
+  kl_regularization_weight: 0.8
+  save_every: 1
+
+decoding:
+  beam_size: 5
+  max_len: 128
+  multipass: true
+  rerank_with: "L2R"
+  nbest: 5
+  output_file: "system_outputs/pred.txt"
+
+evaluation:
+  scorer_script: "m2Scripts/m2scorer.py"
+  system_output: "system_outputs/pred.txt"
+  gold_file: "data/qalb/test.gold.m2"
