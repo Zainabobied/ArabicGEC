@@ -1,6 +1,5 @@
-# GEC-BiCaps — GASD + CapsNet + Bidirectional Agreement for Arabic GEC
-
-Low-resource Arabic Grammatical Error Correction (GEC) system built on a modified version of Transformer-based with: GASD noise method (two baselines: SDA word swapping, SEG spelling & normalization) to construct large synthetic parallel data, CapsNet (EM routing) for dynamic layer aggregation across encoder/decoder layers, Bidirectional agreement (R2L & L2R) with KL-divergence regularization to mitigate exposure bias, and Multi-pass correction and L2R re-ranking of R2L n-best candidates.
+# ArabicGEC an GEC model with Bidirectional Agreement and CapsNet for low resource languages
+ArabicGEC is an Arabic Grammatical Error Correction (GEC) framework that extends the Transformer architecture with several complementary techniques. We proposed GASD, a noise-based data augmentation method that combines two baselines: SDA, which performs word-order perturbation, and SEG, which introduces character-level spelling and normalization errors to construct large-scale synthetic parallel corpora. A CapsNet module with Expectation–Maximization (EM) routing is integrated into the encoder–decoder structure to enable dynamic layer aggregation and capture hierarchical linguistic dependencies. The system further incorporates bidirectional agreement between R2L and L2R decoders using Kullback–Leibler divergence regularization to mitigate exposure bias and improve consistency across decoding directions. Finally, it performs multi-pass correction and re-ranking, where R2L outputs are refined through L2R decoding and re-ranked to select the most grammatically accurate candidates. 
 
 > This repository targets QALB-2014/2015 evaluation with the official M² (MaxMatch) scorer.
 
